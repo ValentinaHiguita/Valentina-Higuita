@@ -1,0 +1,50 @@
+/* Colores cálidos */
+:root {
+    --warm-bg: #FCE4D4;
+    --warm-accent: #FFA07A;
+    --text-dark: #3D3D3D;
+}
+
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--warm-bg);
+    color: var(--text-dark);
+}
+
+/* Header */
+.bg-warm {
+    background-color: var(--warm-accent);
+}
+
+/* Botones */
+.btn-warm {
+    background-color: var(--warm-accent);
+    color: white;
+}
+
+/* Imagen de perfil */
+#about img {
+    width: 50%;
+    border: 3px solid var(--warm-accent);
+}
+
+/* Tarjetas de proyectos */
+.card {
+    border: none;
+    border-radius: 10px;
+}
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Navegación */
+.navbar {
+    padding: 1rem 0;
+}
+
+footer {
+    background-color: var(--warm-bg);
+    color: var(--text-dark);
+}

@@ -1,106 +1,64 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentina David Higuita - Portafolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valen Higuita Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Valentina David Higuita</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
+  <header>
+    <nav class="navbar">
+      <div class="logo">VH</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Header -->
-    <header class="bg-warm text-center py-5">
-        <h1 class="text-white">¡Hola! Soy Valentina David Higuita</h1>
-        <p class="lead text-light">Desarrolladora en formación, apasionada por aprender y crear soluciones prácticas.</p>
-    </header>
+  <section class="hero">
+    <h1>Hi, I'm Valen Higuita</h1>
+    <p>A creative developer passionate about turning ideas into reality.</p>
+  </section>
 
-    <!-- Sobre mí -->
-    <section id="about" class="container my-5">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="img/imagen1.png" class="img-fluid rounded-circle" alt="Foto de Valentina David Higuita">
-            </div>
-            <div class="col-md-8">
-                <h2>Sobre mí</h2>
-                <p>Soy Valentina, una joven hermosa, con una gran pasión por la tecnología y el aprendizaje constante. Me adapto rápidamente, soy buena para escuchar y siempre estoy buscando cómo mejorar mis habilidades.</p>
-                <h4>Hechos Relevantes</h4>
-                <ul>
-                    <li>Conocimiento básico en HTML, CSS, JavaScript, y algo de PHP.</li>
-                    <li>Actualmente estudiando Desarrollo de Software.</li>
-                    <li>Busco oportunidades para desarrollar soluciones creativas y eficientes.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I design and develop elegant websites and applications, focusing on user experience and clean aesthetics.</p>
+  </section>
 
-    <!-- Proyectos -->
-<section id="projects" class="container my-5">
-    <h2 class="text-center">Proyectos</h2>
-    <p class="text-center">Actualmente no tengo proyectos publicados, pero pronto podrás ver algunos de los trabajos que he realizado. ¡Mantente al tanto!</p>
-    <div class="row">
-        <div class="col-md-6 mb-4">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title">Proyecto Próximamente 1</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam vero architecto, voluptatum tenetur illum, fugiat accusamus a maiores quam nesciunt, eligendi quibusdam animi repellendus! Explicabo error totam illum consequatur autem.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title">Proyecto Próximamente 2</h5>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, debitis consequuntur eos expedita optio ad doloribus adipisci vitae sunt autem dignissimos excepturi ratione recusandae doloremque nesciunt totam quod est incidunt!</p>
-                </div>
-            </div>
-        </div>
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x200" alt="Project 1">
+      <h3>Project 1</h3>
+      <p>A brief description of the project.</p>
+      <a href="#" class="btn">View More</a>
     </div>
-</section>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x200" alt="Project 2">
+      <h3>Project 2</h3>
+      <p>A brief description of the project.</p>
+      <a href="#" class="btn">View More</a>
+    </div>
+  </section>
 
-    <!-- Contacto -->
-    <section id="contact" class="container my-5">
-        <h2 class="text-center">Contacto</h2>
-        <p class="text-center">¿Quieres saber más? ¡Ponte en contacto!</p>
-        <form class="mx-auto" style="max-width: 500px;">
-            <div class="mb-3">
-                <label for="name" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="message" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-warm w-100">Enviar</button>
-        </form>
-    </section>
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email me at: <a href="mailto:valenhiguita67@gmail.com">valenhiguita67@gmail.com</a></p>
+    <div class="social-icons">
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="text-center py-4 bg-light">
-        <p>&copy; 2024 Valentina David Higuita. Todos los derechos reservados.</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <footer>
+    <p>&copy; 2024 Valen Higuita. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

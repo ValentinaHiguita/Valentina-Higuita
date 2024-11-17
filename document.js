@@ -1,4 +1,1 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('Welcome to Valen Higuita Portfolio!');
-  });
-  
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>

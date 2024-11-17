@@ -1,64 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valen Higuita Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentina David Higuita - Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">VH</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Valentina David Higuita</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Hi, I'm Valen Higuita</h1>
-    <p>A creative developer passionate about turning ideas into reality.</p>
-  </section>
+    <header class="text-center py-5 bg-dark text-light">
+        <h1>¡Hola! Soy Valentina David Higuita</h1>
+        <p class="lead">Desarrolladora en formación apasionada por aprender y crear soluciones prácticas.</p>
+    </header>
 
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>I design and develop elegant websites and applications, focusing on user experience and clean aesthetics.</p>
-  </section>
+    <section id="about" class="container my-5">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="img/imagen1.png" class="img-fluid rounded-circle" alt="Foto de Valentina">
+            </div>
+            <div class="col-md-8">
+                <h2>Sobre mí</h2>
+                <p>Soy Valentina, una joven desarrolladora de Medellín, con una gran pasión por la tecnología y el aprendizaje constante.</p>
+            </div>
+        </div>
+    </section>
 
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <img src="https://via.placeholder.com/400x200" alt="Project 1">
-      <h3>Project 1</h3>
-      <p>A brief description of the project.</p>
-      <a href="#" class="btn">View More</a>
+    <section id="skills" class="container my-5">
+        <h2 class="text-center">Habilidades</h2>
+        <div class="row text-center">
+            <div class="col-md-3">
+                <i class="fab fa-html5 fa-3x text-warning"></i>
+                <h4>HTML</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 70%">70%</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <i class="fab fa-css3-alt fa-3x text-primary"></i>
+                <h4>CSS</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 60%">60%</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <i class="fab fa-js-square fa-3x text-warning"></i>
+                <h4>JavaScript</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 40%">40%</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <i class="fab fa-bootstrap fa-3x text-purple"></i>
+                <h4>Bootstrap</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-purple" role="progressbar" style="width: 50%">50%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="container my-5">
+        <h2 class="text-center">Experiencia</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>Proyecto Universitario - M.E.P.</h4>
+                <p>Actualmente desarrollando una plataforma web para conectar clientes y proveedores de eventos.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>Futuros Proyectos</h4>
+                <p>Planeo expandir mi portafolio con más proyectos creativos y funcionales.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container my-5">
+        <h2 class="text-center">Proyectos</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 1</h5>
+                        <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#projectModal1">Ver más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     
+    <div class="modal fade" id="projectModal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Proyecto 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Descripción detallada del proyecto...</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="project-card">
-      <img src="https://via.placeholder.com/400x200" alt="Project 2">
-      <h3>Project 2</h3>
-      <p>A brief description of the project.</p>
-      <a href="#" class="btn">View More</a>
+<div class="modal fade" id="instagramModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Instagram</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Visita mi perfil en Instagram:</p>
+                <a href="https://www.instagram.com/tu_usuario" target="_blank" class="btn btn-danger">Ir a Instagram</a>
+            </div>
+        </div>
     </div>
-  </section>
+</div>
 
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Email me at: <a href="mailto:valenhiguita67@gmail.com">valenhiguita67@gmail.com</a></p>
-    <div class="social-icons">
-      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+<div class="modal fade" id="linkedinModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">LinkedIn</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Conéctate conmigo en LinkedIn:</p>
+                <a href="https://www.linkedin.com/in/tu_usuario" target="_blank" class="btn btn-primary">Ir a LinkedIn</a>
+            </div>
+        </div>
     </div>
-  </section>
+</div>
 
-  <footer>
-    <p>&copy; 2024 Valen Higuita. All rights reserved.</p>
-  </footer>
-  <script src="script.js"></script>
+<div class="modal fade" id="twitterModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">X (Twitter)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Encuéntrame en X (Twitter):</p>
+                <a href="https://www.twitter.com/tu_usuario" target="_blank" class="btn btn-info">Ir a X (Twitter)</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>&copy; 2024 Valentina David Higuita</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>

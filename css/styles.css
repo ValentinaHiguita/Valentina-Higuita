@@ -9,19 +9,6 @@ body {
     text-align: center  ;
 }
 
-h1, h2, h4 {
-    color: #f5f5f5;
-}
-
-/* Navbar */
-.navbar {
-    background-color: #333;
-}
-
-.navbar-brand, .nav-link {
-    color: #e0e0e0 !important;
-}
-
 .nav-link:hover {
     color: #ff9800 !important;
 }
@@ -29,92 +16,341 @@ h1, h2, h4 {
 /* Header */
 header {
     background: linear-gradient(to bottom, #333, #1e1e1e);
-    color: #f5f5f5;
     padding: 3rem 0;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
+.lead {
+  text-align: -webkit-center;
 }
 
-/* Sobre mí */
-#about img {
-    max-width: 200px;
-    margin-bottom: 1rem;
-    border: 5px solid #555;
-}
 
-/* Habilidades */
-#skills i {
-    margin-bottom: 0.5rem;
-}
-
-.progress {
-    margin: 0.5rem 0;
-    height: 15px;
-}
-
-.progress-bar {
-    line-height: 15px;
-}
 
 /* Experiencia */
-.timeline {
-    border-left: 3px solid #ff9800;
-    padding-left: 1rem;
-    margin: 1rem 0;
-}
-
-.timeline-item {
-    margin-bottom: 1rem;
-}
-
 .timeline-item h4 {
     margin: 0;
     color: #ff9800;
 }
 
-/* Proyectos */
-.card {
-    background-color: #333;
-    color: #e0e0e0;
-    border: 1px solid #444;
+
+/*PEGAAAAAAAAAAAAAAAAAAAAAAAAA*/
+.experiencia {
+  padding: 40px 40px 60px 40px;
+  background-color: #000000;
+  color: aliceblue;
 }
 
-.card-title {
-    color: #ff9800;
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
 }
 
-.btn-secondary {
-    background-color: #444;
-    border: none;
+.experiencia .columna:hover {
+  color: white;
+  background-color: #1b1b32;
 }
 
-.btn-secondary:hover {
-    background-color: #ff9800;
-    color: #fff;
+.experiencia i {
+  font-size: 2.5rem;
+  color: #5ecb0a;
+  background-color: #0a0a23;
+  padding: 8px 19px;
+  border-radius: 50%;
 }
 
-/* Footer */
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
+
+.seccion-titulo {
+color: aliceblue; 
+font-size: 2rem; 
+}
+
+.seccion-descripcion {
+color: aliceblue; 
+font-size: 1.2rem; 
+}
+
+.proyectos-recientes {
+  padding: 40px;
+  background-color:#aeb2e7;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 60%;
+  padding: 30px;
+  border-radius: 50px;
+  display: block;
+  transition: all 0.2s ease;
+ 
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: white;
+  font-size: 60px;
+  margin: 10px;
+}
+.btn-info {
+  background-color: aliceblue;
+}
+
+/* Testimonios */
+
+.testimonios {
+  padding: 40px 40px 80px 40px;
+  background-color: #000000;
+  color: aliceblue;
+  width: 100%;
+}
+
+.testimonios .carousel {
+  color: aliceblue;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+background-color: #6d0e0e; 
+border-radius: 50%; 
+}
+
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonio-info p {
+  margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+  font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+  font-size: 0.9rem;
+  color: #656060;
+}
+
+/* Contacto */
+
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color:#8389e1;
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.contacto button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: black;
+}
+
 footer {
-    background-color: #333;
-    color: #e0e0e0;
-    padding: 1rem 0;
+  min-height: 500px;
 }
 
-footer p {
-    margin: 0;
+.footer-logo {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
 
-    #skills .col-md-3 {
-        margin-bottom: 1rem;
-    }
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+@media (max-width: 768px) { 
+.navbar-nav {
+  gap: 20px; 
+}
+}
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
 }
